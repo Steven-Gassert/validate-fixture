@@ -1,0 +1,52 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "QueryResponse": {
+            "description": "A response containing the documents and aggregations for the query.",
+            "properties": {
+                "matching_results": {
+                    "description": "The number of matching results for the query.",
+                    "title": "matching_results",
+                    "type": "number"
+                },
+                "results": {
+                    "description": "Array of document results for the query.",
+                    "items": {
+                        "$ref": "#/definitions/QueryResult"
+                    },
+                    "title": "results",
+                    "type": "array"
+                }
+            },
+            "required": [
+                "matching_results",
+                "results"
+            ],
+            "type": "object",
+            "title": "QueryResponse"
+            
+        },
+        "QueryResult": {
+            "description": "Result document for the specified query.",
+            "properties": {
+                "document_id": {
+                    "description": "The unique identifier of the document.",
+                    "title": "document_id",
+                    "type": "string"
+                },
+                "text": {
+                    "description": "text of the result",
+                    "title": "text",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "document_id",
+                "text"
+            ],
+            "title": "QueryResult",
+            "type": "object"
+        }
+    }
+}
+
