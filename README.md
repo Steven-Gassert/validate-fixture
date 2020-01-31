@@ -7,15 +7,7 @@ In order to see the error that cypress schema tools will throw when one of our f
 
   
 
-```
-
-  
-
-yarn
-
-  
-
-```
+`yarn`
 
   
 
@@ -24,15 +16,7 @@ and then
   
   
 
-```
-
-  
-
-yarn run cypress open
-
-  
-
-```
+`yarn run cypress open`
 
 ## Pipeline
 The pipline to validating these fixtures currently is
