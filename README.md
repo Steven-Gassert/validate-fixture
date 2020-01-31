@@ -18,6 +18,8 @@ and then
 
 `yarn run cypress open`
 
+and select the `test.spec.js` file
+
 ## Pipeline
 The pipline to validating these fixtures currently is
 
